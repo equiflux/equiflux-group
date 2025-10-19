@@ -1,5 +1,8 @@
 # Equiflux Chain
 
+
+![equiflux](icon.png)
+
 ## 社区自治隐私公链 | Community-Driven Privacy Blockchain
 
 ---

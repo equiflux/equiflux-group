@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Equiflux Protocol — 流动中的平衡</title>
+  <meta name="description" content="Equiflux Protocol：隐私、公平、自由的下一代公链。Stay Private, Stay Free.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700;800&family=Orbitron:wght@400;500;700;900&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="../images/icon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="/">
+        <span class="brand-icon" aria-hidden="true">⬢</span>
+        <span class="brand-text">EQUIFLUX</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#features">特性</a>
+        <a href="#docs">文档</a>
+        <a href="#community">社区</a>
+        <a class="btn primary" href="#start">开始使用</a>
+      </nav>
+      <button class="menu-toggle" aria-label="打开菜单">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="hero">
+      <div class="container">
+        <h1 class="title">流动中的平衡</h1>
+        <p class="subtitle">隐私、公平与自由的下一代公链协议 — Equiflux Protocol</p>
+        <div class="actions">
+          <a class="btn primary" href="#start">立即开始</a>
+          <a class="btn ghost" href="#docs">查看白皮书</a>
+        </div>
+      </div>
+      <div class="hero-bg" aria-hidden="true"></div>
+    </section>
+
+    <section class="features" id="features">
+      <div class="container grid">
+        <article class="card">
+          <h3>隐私优先</h3>
+          <p>零知识与混淆技术融合，默认隐私保护，公开可验证。</p>
+        </article>
+        <article class="card">
+          <h3>公平启动</h3>
+          <p>无预挖、无私募、社区共建，去中心化治理。</p>
+        </article>
+        <article class="card">
+          <h3>高性能</h3>
+          <p>并行执行与模块化设计，吞吐与延迟兼顾。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta" id="start">
+      <div class="container">
+        <h2>加入 Equiflux</h2>
+        <p>Stay Private, Stay Free.</p>
+        <a class="btn primary large" href="#community">加入社区</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" id="community">
+    <div class="container">
+      <p>© <span id="year"></span> Equiflux Protocol</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    const toggle = document.querySelector('.menu-toggle');
+    const nav = document.querySelector('.site-nav');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
+
